@@ -1,4 +1,4 @@
-package application;
+package calculator;
 
 import java.io.IOException;
 import java.net.URL;
@@ -9,18 +9,18 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class HelloFX extends Application {
+public class Calculator extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
     	//
-        URL url = getClass().getResource("hello.fxml");
+        URL url = getClass().getResource("calculator.fxml");
         AnchorPane pane = FXMLLoader.load( url );
         Scene scene = new Scene( pane );
         
         //
         stage.setScene(scene);
-        stage.setTitle("Hello World Demo");
+        stage.setTitle("Calculator");
         stage.show();
     }
 
